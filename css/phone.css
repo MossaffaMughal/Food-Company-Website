@@ -1,0 +1,70 @@
+/* Just to check if the media query is working */
+/* body {
+    background-color: red;
+} */
+
+/* Navigation */
+#navbar {
+  flex-direction: column;
+}
+#navbar ul li a {
+  font-size: 1rem;
+  padding: 0px 7px;
+  padding-bottom: 8px;
+}
+/* Home Section */
+#home {
+  height: 370px;
+  padding: 3px 40px;
+}
+#home::before {
+  height: 400px;
+}
+#home p {
+  font-size: 10px;
+}
+
+/* Services section */
+#services {
+  /* The boxes in our services section had a display flex, and they were occupying the space (as they all were appearing in a horizontal direction) that was making things go wrong in smaller resolutions. So, we will change the flex direction to solve a this issue   */
+  flex-direction: column;
+}
+#services .box {
+  padding: 14px;
+  /* margin: 2px 15px; */
+  margin-bottom: 20px;
+}
+#services .box img {
+  height: 60px;
+  width: 80px;
+}
+
+/* Clients section */
+#clients {
+  /* Jitna content screen pe fit hoga, utna hi nazar ayega  */
+  /* overflow: hidden; */
+  flex-wrap: wrap;
+}
+#client-section {
+  height: auto;
+}
+#clients img {
+  width: 60px;
+  height: 60px;
+  padding: 0px 3px;
+}
+.client-item {
+  padding: 15px;
+}
+/* Contact us section */
+
+/* Footer */
+
+/* Utility classes */
+.h-primary {
+  font-size: 26px;
+}
+.btn {
+  font-size: 13px;
+  padding: 4px 8px;
+}
